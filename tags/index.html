@@ -9,7 +9,7 @@
 <meta name="description" content="大鹏一日同风起，扶摇直上九万里。">
 <meta name="theme-color" content="#000">
 <title>Liao</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1602413707804">
+<link rel="shortcut icon" href="/favicon.ico?v=1602414455672">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -181,14 +181,7 @@
     
     <div class="site-description right-motion">
       
-      
-      
-        <p>微信：L2490265192</p>
-      
-        <p>QQ：2490265192</p>
-      
-        <p>当你急着奔向未来的时候，说明你已经不喜欢现在了。</p>
-      
+        <p id="binft">微信：L2490265192\nQQ：2490265192\n当你急着奔向未来的时候，说明你已经不喜欢现在了。</p>
       
     </div>
     
@@ -220,6 +213,11 @@
   
 
 
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
 
 </div>
 </div>
@@ -360,11 +358,17 @@
         <div class="live_ico_item type_info" id="showInfoBtn"></div>
         <div class="live_ico_item type_talk" id="showTalkBtn"></div>
         
+        <div class="live_ico_item type_music" id="musicButton"></div>
+        
         <div class="live_ico_item type_youdu" id="youduButton"></div>
         <div class="live_ico_item type_quit" id="hideButton"></div>
         <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
         <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
         <input id="duType" value="douqilai" type="hidden">
+        
+        <input name="live2dBGM" value="D:\qq\qq音乐歌曲MV" type="hidden">
+        
+        <input name="live2dBGM" value="" type="hidden">
         
       </div>
     
@@ -1392,7 +1396,11 @@
 <script src="/media/js/mouse/love.js"></script>
 
 
+<script src="/media/js/cool.js"></script>
 
+
+
+<script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>
 
 
 </html>
