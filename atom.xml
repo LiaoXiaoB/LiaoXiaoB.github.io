@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-12T09:52:08.028Z</updated>
+    <updated>2020-10-12T11:07:27.380Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -10,6 +10,83 @@
     <logo>https://LiaoXiaoB.github.io/images/avatar.png</logo>
     <icon>https://LiaoXiaoB.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Liao</rights>
+    <entry>
+        <title type="html"><![CDATA[phpStydy 2018教程]]></title>
+        <id>https://LiaoXiaoB.github.io/post/phpstydy-2018-jiao-cheng/</id>
+        <link href="https://LiaoXiaoB.github.io/post/phpstydy-2018-jiao-cheng/">
+        </link>
+        <updated>2020-10-12T10:38:03.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://LiaoXiaoB.github.io/post-images/1602499376446.jpg" alt="" loading="lazy"><br>
+<strong>phpStudy 2018</strong>教程！<br>
+根据PHP课堂方法，笔记而成✏️</p>
+<h2 id="1">1）</h2>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://LiaoXiaoB.github.io/post-images/1602499376446.jpg" alt="" loading="lazy"><br>
+<strong>phpStudy 2018</strong>教程！<br>
+根据PHP课堂方法，笔记而成✏️</p>
+<h2 id="1">1）</h2>
+<!-- more -->
+<p>百度搜索<a href="http://www.downza.cn/soft/275049.html">phpStudy 2018</a>下载<br>
+打开，会自动运行Apache和MySQL<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602499743028.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="2">2)</h2>
+<p>然后选择-&gt;<strong>其他选项菜单</strong>-&gt;<strong>MySQL工具</strong>-&gt;进入<strong>MySQL命令行</strong><br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602499914588.jpg" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="3">3）</h2>
+<p>输入密码：root<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602499968525.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="4">4）</h2>
+<p>输入：show databases; 查看当前数据库<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500022899.jpg" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="5">5）</h2>
+<p>输入：create database demo; 新建一个名为demo的数据库<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500073735.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="6">6）</h2>
+<p>设置编码格式：set names utf8;</p>
+<!-- more -->
+<h2 id="7">7）</h2>
+<p>输入：drop database demo; 删除当前名为demo的数据库<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500145541.png" alt="" loading="lazy"></p>
+<h2 id="8">8）</h2>
+<p>输入：use demo; 选择名为demo的数据库<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500220932.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="9">9）</h2>
+<p>输入： create table uset(id int,name varchar(20)); 创建uset数据表，里面有两个字段，id和name<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500266081.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="10">10）</h2>
+<p>输入：DESC uset; 查看创建的数据表<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500307766.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="11">11）</h2>
+<p>输入：insert into uset(id,name) values(1,'zwj');<br>
+插入数据，到uset表（id，name）赋值给这两个字段<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500360270.png" alt="" loading="lazy"></p>
+<p>也可以省略：（id，name），但是赋值顺序必须是id-&gt;name<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500421512.png" alt="" loading="lazy"></p>
+<p>也可以互换（name，id）<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500459655.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="12">12）</h2>
+<p>输入：select * from uset; 检索所有内容，输入： select id from uset; 检索所有id，输入：select name from uset; 检索所有name，输入：select id 'zwj'from uset; 检索叫zwj的内容<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500564555.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="13">13）</h2>
+<p>输入：update uset set name = 'zwj' where id = 1; 更新数据，忘记密码这种情况，后台可以更改密码<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500628085.png" alt="" loading="lazy"></p>
+<!-- more -->
+<h2 id="14">14）</h2>
+<p>输入：delete from uset where id = 3; 删除id为3的内容<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602500675498.png" alt="" loading="lazy"></p>
+<p><strong>未完待续......）</strong></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[       《上李邕》]]></title>
         <id>https://LiaoXiaoB.github.io/post/lesslessshang-li-yong-greatergreater/</id>
