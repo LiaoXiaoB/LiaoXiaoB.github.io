@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-13T01:44:22.434Z</updated>
+    <updated>2020-10-13T01:45:42.248Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -96,11 +96,11 @@
         <link href="https://LiaoXiaoB.github.io/post/phpstydy-2018-jiao-cheng/">
         </link>
         <updated>2020-10-12T10:38:03.000Z</updated>
-        <summary type="html"><![CDATA[<p><strong>phpStudy 2018</strong>教程！<br>
+        <summary type="html"><![CDATA[<p><strong>phpStudy 2018</strong>基础：<strong>增删改查</strong><br>
 根据PHP课堂方法，笔记而成✏️</p>
 <h2 id="1">1）</h2>
 ]]></summary>
-        <content type="html"><![CDATA[<p><strong>phpStudy 2018</strong>教程！<br>
+        <content type="html"><![CDATA[<p><strong>phpStudy 2018</strong>基础：<strong>增删改查</strong><br>
 根据PHP课堂方法，笔记而成✏️</p>
 <h2 id="1">1）</h2>
 <!-- more -->
