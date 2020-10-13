@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-13T02:27:17.047Z</updated>
+    <updated>2020-10-13T07:42:55.697Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -23,7 +23,7 @@
 根据PHP课堂方法，笔记而成✏️</p>
 <h2 id="-more-1创建"><!-- more --><br>
 1）创建</h2>
-<p>1.输入：create database cms; 创建名为cms的数据库<br>
+<p>1.输入：<code>create database cms;</code> 创建名为<code>cms</code>的数据库<br>
 <img src="https://LiaoXiaoB.github.io/post-images/1602554859208.png" alt="" loading="lazy"><br>
 2.输入：<code>set names utf8;</code> 设置编码格式</p>
 <!-- more -->
@@ -36,12 +36,45 @@ name varchar(20) not null,
 password varchar(20) not null,
 emal varchar(20));
 </code></pre>
-<p>创建名为 c_user的数据表<br>
-【Query OK，开头执行成功】<br>
-【ERROR开头就是失败】</p>
-<p>创建设置id为key值，设置name值，设置password值，不为空，创建email值。<br>
+<p>创建名为<code>c_user</code>的数据表</p>
+<p>创建设置<code>id</code>为<code>key</code>值，设置<code>name</code>值，设置<code>password</code>值，不为空，创建<code>email</code>值。<br>
 <img src="https://LiaoXiaoB.github.io/post-images/1602555440625.png" alt="" loading="lazy"><br>
 5.输入</p>
+<pre><code>create table post(
+      title varchar(50),
+      user_id int not null,
+      time timestamp default
+      CuRRENT_TIMESTAMP not null);
+</code></pre>
+<p>创建 post 数据表，创建 title 值，创建 user_id 值，不为空，创建时间戳<br>
+defaul：默认 CURRENT_TIMESTAMP：当前时间戳</p>
+<p>6.输入<code>DESC POST;</code>和<code>DESC C_USER;</code>可查看数据<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602557037371.png" alt="" loading="lazy"><br>
+7.输入</p>
+<pre><code> insert into c_user
+       (name,password,email)
+       values
+       ('ZYM','123456','820@qq.com');
+</code></pre>
+<p>插入数据<br>
+输入：<code>select * from c_user;</code> 查看数据<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602574677210.png" alt="" loading="lazy"><br>
+输入：<code>select id from c_user where name = '345';</code> 查询名为 345 的 id<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602574935393.png" alt="" loading="lazy"><br>
+输入：<code>alter table post rename c_post;</code> 更改post表名为 c_post<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602574942924.png" alt="" loading="lazy"></p>
+<!-- more -->
+<p>###最后附上一些常用小知识<br>
+一般【Query OK，开头执行成功，ERROR开头就是失败】<br>
+default: 默认的意思<br>
+CuRRENT_TIMESTAMP：当前时间戳<br>
+post：帖子<br>
+use：使用<br>
+create：创造<br>
+show：展示<br>
+nall：空<br>
+table：表<br>
+key：钥匙</p>
 ]]></content>
     </entry>
     <entry>
