@@ -9,7 +9,7 @@
 <meta name="description" content="大鹏一日同风起，扶摇直上九万里。">
 <meta name="theme-color" content="#000">
 <title>Liao</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1602660593984">
+<link rel="shortcut icon" href="/favicon.ico?v=1602663717998">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -1122,14 +1122,43 @@
 &lt;img src=&#34;https://LiaoXiaoB.github.io/post-images/1602659990242.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;-more-3查找c_user表内数据&#34;&gt;&lt;!-- more --&gt;&lt;br&gt;
 3）查找c_user表内数据&lt;/h2&gt;
-&lt;p&gt;输入&lt;code&gt;select * from c_user where id=1;&lt;/code&gt;找到ID为1的数据&lt;br&gt;
+&lt;h2 id=&#34;输入select-from-c_user-where-id1找到id为1的数据输入select-from-c_user-where-namezym找到名字是zym的数据输入-select-from-c_user-where-namezym-and-id1找到名字是zymid1的数据4之后输入&#34;&gt;输入&lt;code&gt;select * from c_user where id=1;&lt;/code&gt;找到ID为1的数据&lt;br&gt;
 输入&lt;code&gt;select * from c_user where name=&#39;ZYM&#39;;&lt;/code&gt;找到名字是ZYM的数据&lt;br&gt;
 输入 &lt;code&gt;select * from c_user where name=&#39;ZYM&#39; and id=1;&lt;/code&gt;找到名字是ZYM，ID=1的数据&lt;br&gt;
-&lt;img src=&#34;https://LiaoXiaoB.github.io/post-images/1602660418341.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://LiaoXiaoB.github.io/post-images/1602660418341.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+4）之后输入&lt;/h2&gt;
+&lt;h2 id=&#34;alter-table-c_post-add-column-p_id-int-primary-key-auto_increment5在phpstudy-2018其他选项菜单打开文件根目录&#34;&gt;&lt;code&gt;alter table c_post add column p_id int primary key auto_increment;&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://LiaoXiaoB.github.io/post-images/1602663183720.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+5)在phpStudy 2018其他选项菜单打开文件根目录&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://LiaoXiaoB.github.io/post-images/1602663525126.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+创建mysql_conn.php文件输入&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-&amp;lt;?php&#34;&gt;    #解决乱码
+    header(&#39;Content-type:text/html;charset=UTF8&#39;);
+    #链接数据库
+    $conn = mysql_connect(&#39;localhost&#39;,&#39;root&#39;,&#39;root&#39;);
+    if(!$conn){
+    	die(&#39;your database start fail&#39;).mysql_error($conn);
+    }else{
+    	print_r(&#39;你的数据库链接成功&#39;).&#39;&amp;lt;br&amp;gt;&#39;;
+    }
+    #使用cms数据库
+    $database_select = mysql_select_db(&#39;cms&#39;);
+
+    if (!$database_select){
+    	die(&#39;fail&#39;).mysql_error($database_select);
+    }else{
+    	print_r(&#39;你的cms数据库使用成功&#39;).&#39;&amp;lt;br&amp;gt;&#39;;
+    }
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;###遇到没法结束的命令行就ctrl+c&lt;br&gt;
 mysql -u root -p&lt;br&gt;
-再用上面的代码，重新输入root就好。&lt;/p&gt;
+再用上面的代码，重新输入root就好。&lt;br&gt;
+alter table 修改表&lt;br&gt;
+add column 增加行/字段&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;strong&gt;未完待续......)&lt;/strong&gt;&lt;/p&gt;
 ">phpStudy 2018教程（三）</a>
       </div>
       
@@ -1191,6 +1220,8 @@ show：展示&lt;br&gt;
 nall：空&lt;br&gt;
 table：表&lt;br&gt;
 key：钥匙&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;strong&gt;未完待续......)&lt;/strong&gt;&lt;/p&gt;
 ">phpStudy 2018教程（二）</a>
       </div>
       

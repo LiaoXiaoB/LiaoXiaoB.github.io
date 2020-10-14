@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-14T07:30:55.413Z</updated>
+    <updated>2020-10-14T08:22:01.674Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -32,14 +32,43 @@
 <img src="https://LiaoXiaoB.github.io/post-images/1602659990242.png" alt="" loading="lazy"></p>
 <h2 id="-more-3查找c_user表内数据"><!-- more --><br>
 3）查找c_user表内数据</h2>
-<p>输入<code>select * from c_user where id=1;</code>找到ID为1的数据<br>
+<h2 id="输入select-from-c_user-where-id1找到id为1的数据输入select-from-c_user-where-namezym找到名字是zym的数据输入-select-from-c_user-where-namezym-and-id1找到名字是zymid1的数据4之后输入">输入<code>select * from c_user where id=1;</code>找到ID为1的数据<br>
 输入<code>select * from c_user where name='ZYM';</code>找到名字是ZYM的数据<br>
 输入 <code>select * from c_user where name='ZYM' and id=1;</code>找到名字是ZYM，ID=1的数据<br>
-<img src="https://LiaoXiaoB.github.io/post-images/1602660418341.png" alt="" loading="lazy"></p>
+<img src="https://LiaoXiaoB.github.io/post-images/1602660418341.png" alt="" loading="lazy"><br>
+4）之后输入</h2>
+<h2 id="alter-table-c_post-add-column-p_id-int-primary-key-auto_increment5在phpstudy-2018其他选项菜单打开文件根目录"><code>alter table c_post add column p_id int primary key auto_increment;</code><br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602663183720.png" alt="" loading="lazy"><br>
+5)在phpStudy 2018其他选项菜单打开文件根目录</h2>
+<p><img src="https://LiaoXiaoB.github.io/post-images/1602663525126.png" alt="" loading="lazy"><br>
+创建mysql_conn.php文件输入</p>
+<pre><code class="language-&lt;?php">    #解决乱码
+    header('Content-type:text/html;charset=UTF8');
+    #链接数据库
+    $conn = mysql_connect('localhost','root','root');
+    if(!$conn){
+    	die('your database start fail').mysql_error($conn);
+    }else{
+    	print_r('你的数据库链接成功').'&lt;br&gt;';
+    }
+    #使用cms数据库
+    $database_select = mysql_select_db('cms');
+
+    if (!$database_select){
+    	die('fail').mysql_error($database_select);
+    }else{
+    	print_r('你的cms数据库使用成功').'&lt;br&gt;';
+    }
+?&gt;
+</code></pre>
 <!-- more -->
 <p>###遇到没法结束的命令行就ctrl+c<br>
 mysql -u root -p<br>
-再用上面的代码，重新输入root就好。</p>
+再用上面的代码，重新输入root就好。<br>
+alter table 修改表<br>
+add column 增加行/字段</p>
+<!-- more -->
+<p><strong>未完待续......)</strong></p>
 ]]></content>
     </entry>
     <entry>
@@ -107,6 +136,8 @@ show：展示<br>
 nall：空<br>
 table：表<br>
 key：钥匙</p>
+<!-- more -->
+<p><strong>未完待续......)</strong></p>
 ]]></content>
     </entry>
     <entry>
