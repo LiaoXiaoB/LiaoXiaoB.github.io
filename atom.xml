@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-14T08:23:07.104Z</updated>
+    <updated>2020-10-14T08:25:34.127Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -23,8 +23,9 @@
 根据PHP课堂方法，笔记而成✏️</p>
 <h2 id="-more-1打开phpstudy"><!-- more --><br>
 1）打开phpStudy</h2>
-<h2 id="2首先接入上次课程输入"><img src="https://LiaoXiaoB.github.io/post-images/1602658128990.png" alt="" loading="lazy"><br>
-2）首先接入上次课程输入：</h2>
+<figure data-type="image" tabindex="1"><img src="https://LiaoXiaoB.github.io/post-images/1602658128990.png" alt="" loading="lazy"></figure>
+<!-- more -->
+<h2 id="2首先接入上次课程输入">2）首先接入上次课程输入：</h2>
 <p><code>show databases;</code><br>
 <code>use cms;</code><br>
 <code>show tables;</code><br>
@@ -32,13 +33,15 @@
 <img src="https://LiaoXiaoB.github.io/post-images/1602659990242.png" alt="" loading="lazy"></p>
 <h2 id="-more-3查找c_user表内数据"><!-- more --><br>
 3）查找c_user表内数据</h2>
-<h2 id="输入select-from-c_user-where-id1找到id为1的数据输入select-from-c_user-where-namezym找到名字是zym的数据输入-select-from-c_user-where-namezym-and-id1找到名字是zymid1的数据4之后输入">输入<code>select * from c_user where id=1;</code>找到ID为1的数据<br>
+<p>输入<code>select * from c_user where id=1;</code>找到ID为1的数据<br>
 输入<code>select * from c_user where name='ZYM';</code>找到名字是ZYM的数据<br>
 输入 <code>select * from c_user where name='ZYM' and id=1;</code>找到名字是ZYM，ID=1的数据<br>
-<img src="https://LiaoXiaoB.github.io/post-images/1602660418341.png" alt="" loading="lazy"><br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602660418341.png" alt="" loading="lazy"></p>
+<h2 id="-more-4之后输入"><!-- more --><br>
 4）之后输入</h2>
-<h2 id="alter-table-c_post-add-column-p_id-int-primary-key-auto_increment5在phpstudy-2018其他选项菜单打开文件根目录"><code>alter table c_post add column p_id int primary key auto_increment;</code><br>
-<img src="https://LiaoXiaoB.github.io/post-images/1602663183720.png" alt="" loading="lazy"><br>
+<p><code>alter table c_post add column p_id int primary key auto_increment;</code><br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602663183720.png" alt="" loading="lazy"></p>
+<h2 id="-more-5在phpstudy-2018其他选项菜单打开文件根目录"><!-- more --><br>
 5)在phpStudy 2018其他选项菜单打开文件根目录</h2>
 <p><img src="https://LiaoXiaoB.github.io/post-images/1602663525126.png" alt="" loading="lazy"><br>
 创建mysql_conn.php文件输入</p>
