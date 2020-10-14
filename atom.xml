@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-14T08:27:26.425Z</updated>
+    <updated>2020-10-14T08:31:46.423Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -69,6 +69,7 @@
     }
 ?&gt;
 </code></pre>
+<p>最后浏览器输入地址 <a href="http://localhost/cms/mysql_conn.php">http://localhost/cms/mysql_conn.php</a>显示 连接成功 就成功了</p>
 <!-- more -->
 <p>###遇到没法结束的命令行就ctrl+c<br>
 mysql -u root -p<br>
