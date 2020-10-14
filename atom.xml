@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-14T06:26:41.770Z</updated>
+    <updated>2020-10-14T07:28:56.114Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://LiaoXiaoB.github.io/images/avatar.png</logo>
     <icon>https://LiaoXiaoB.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Liao</rights>
+    <entry>
+        <title type="html"><![CDATA[phpStudy 2018教程（三）]]></title>
+        <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-san/</id>
+        <link href="https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-san/">
+        </link>
+        <updated>2020-10-14T06:42:56.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+<h2 id="-more-1打开phpstudy"><!-- more --><br>
+1）打开phpStudy</h2>
+<h2 id="2首先接入上次课程输入"><img src="https://LiaoXiaoB.github.io/post-images/1602658128990.png" alt="" loading="lazy"><br>
+2）首先接入上次课程输入：</h2>
+<p><code>show databases;</code><br>
+<code>use cms;</code><br>
+<code>show tables;</code><br>
+<code>select * from c_user;</code><br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602659990242.png" alt="" loading="lazy"></p>
+<h2 id="-more-3查找c_user表内数据"><!-- more --><br>
+3）查找c_user表内数据</h2>
+<p>输入<code>select * from c_user where id=1;</code>找到ID为1的数据<br>
+输入<code>select * from c_user where name='ZYM';</code>找到名字是ZYM的数据<br>
+输入 <code>select * from c_user where name='ZYM' and id=1;</code>找到名字是ZYM，ID=1的数据<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1602660418341.png" alt="" loading="lazy"></p>
+<!-- more -->
+<p>###遇到没法结束的命令行就ctrl+c<br>
+mysql -u root -p<br>
+再用上面的代码，重新输入root就好。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[phpStudy 2018教程（二）]]></title>
         <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-er/</id>
