@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-14T08:31:46.423Z</updated>
+    <updated>2020-10-16T07:37:25.698Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -10,6 +10,86 @@
     <logo>https://LiaoXiaoB.github.io/images/avatar.png</logo>
     <icon>https://LiaoXiaoB.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Liao</rights>
+    <entry>
+        <title type="html"><![CDATA[phpStudy 2018教程（四）]]></title>
+        <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-si/</id>
+        <link href="https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-si/">
+        </link>
+        <updated>2020-10-16T00:46:12.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+<h2 id="-more-1"><!-- more --><br>
+1）</h2>
+<p><code>use cms;</code>使用cms数据库<code>show tables;</code>展示数据表<code>desc c_user;</code>展示细节<code>select * from c_user;</code>检索c_user，*所有数据，如果出现empty set说明你的表里面没有数据。</p>
+<h2 id="-more-2"><!-- more --><br>
+2)</h2>
+<p>mysql的数据库有千万条数据，但是千万条数据里面找你一个，就很费时间，select是帮你整个表检索一遍，所有可以用limit来实现，检索特定的行数。<br>
+<code>select *from c_user limit 1;</code><br>
+<code>select *from c_user limit 2;</code><br>
+<code>select *from c_user limit 3;</code><br>
+<code>select *from c_user limit 4;</code></p>
+<h2 id="-more-3"><!-- more --><br>
+3)</h2>
+<p>这张表检索到一条数据后结束检索</p>
+<pre><code>select * from c_user where
+     name='ZYM'
+     and
+     password='123456'
+     limit 1;
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://LiaoXiaoB.github.io/post-images/1602811743273.png" alt="" loading="lazy"></figure>
+<h2 id="-more-4"><!-- more --><br>
+4）</h2>
+<p>找到phpStudy的安装路径，然后进入www文件夹里面的cms文件夹，如果没有cms文件夹就创建一个，<br>
+之后在cms文件夹下创建一个文件名字如下：<br>
+mysql_conn2.php<br>
+在此文件中输入：</p>
+<pre><code>&lt;?php
+    //设置编码，PHP正确显示中文字符
+    header('Content-type:text/html;charset=UTF8');
+
+    //mysql—connect利用PHP链接数据库
+    $conn = mysql_connect('127.0.0.1','root','root');
+    if(!$conn){
+    	die('链接数据课失败').error_log($conn);
+    }else{
+    	print_r('恭喜你，链接数据库成功了&lt;br/&gt;');
+    }
+    //使用cms数据库 select 检索   db:database: 数据库
+    $ms_db =mysql_select_db('cms');
+    if(!$ms_db){
+    	die('链接cms失败').error_log($ms_db);
+    }else{
+    	print_r('链接cms成功&lt;br/&gt;');
+    }
+    //执行我们的sql操作
+    //$sql = &quot;select * from c_user&quot;;
+    //用一个$result来储存结果，mysql_query执行sql操作
+    //$result=mysql_query($sql);
+    //php有太多版本，mysql_query,mysqli_query出现了多个参数不一致的情况
+    /*while($row=mysql_fetch_assoc($result)){
+    	echo 'ID:'.$row['id'].' ';
+    	echo '用户名:'.$row['name'].' ';
+    	echo '密码:'.$row['password'].'&lt;br/&gt;';*/
+    $sql = &quot;select * from c_user where name='ZYM' and
+        password='123456' limit 1&quot;;
+    $result = mysql_query($sql);
+    if(mysql_fetch_assoc($result)){
+    	echo &quot;我找到了名字叫做ZYM，并且密码是123456的用户&quot;;
+    }else{
+    	echo &quot;我没找到了名字叫做ZYM，并且密码是123456的用户&quot;;
+    }
+    
+?&gt;
+
+</code></pre>
+<!-- more -->
+<p><strong>未完待续......)</strong></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[phpStudy 2018教程（三）]]></title>
         <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-san/</id>

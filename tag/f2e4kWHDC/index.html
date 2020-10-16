@@ -9,7 +9,7 @@
 <meta name="description" content="大鹏一日同风起，扶摇直上九万里。">
 <meta name="theme-color" content="#000">
 <title>Liao</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1602664297464">
+<link rel="shortcut icon" href="/favicon.ico?v=1602833837052">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -200,7 +200,7 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">6</span>
+        <span class="site-item-stat-count">7</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
@@ -273,6 +273,8 @@
           <small class="language" data-lan="tag">标签</small>
         </h2>
       </div>
+      
+      
       
       
       
@@ -1106,6 +1108,80 @@
       <hr>
     </div>
     <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-si/"" data-c="
+          &lt;p&gt;&lt;strong&gt;phpStudy 2018&lt;/strong&gt; 项目💾&lt;br&gt;
+根据PHP课堂方法，笔记而成✏️&lt;/p&gt;
+&lt;h2 id=&#34;-more-1&#34;&gt;&lt;!-- more --&gt;&lt;br&gt;
+1）&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;use cms;&lt;/code&gt;使用cms数据库&lt;code&gt;show tables;&lt;/code&gt;展示数据表&lt;code&gt;desc c_user;&lt;/code&gt;展示细节&lt;code&gt;select * from c_user;&lt;/code&gt;检索c_user，*所有数据，如果出现empty set说明你的表里面没有数据。&lt;/p&gt;
+&lt;h2 id=&#34;-more-2&#34;&gt;&lt;!-- more --&gt;&lt;br&gt;
+2)&lt;/h2&gt;
+&lt;p&gt;mysql的数据库有千万条数据，但是千万条数据里面找你一个，就很费时间，select是帮你整个表检索一遍，所有可以用limit来实现，检索特定的行数。&lt;br&gt;
+&lt;code&gt;select *from c_user limit 1;&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;select *from c_user limit 2;&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;select *from c_user limit 3;&lt;/code&gt;&lt;br&gt;
+&lt;code&gt;select *from c_user limit 4;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-more-3&#34;&gt;&lt;!-- more --&gt;&lt;br&gt;
+3)&lt;/h2&gt;
+&lt;p&gt;这张表检索到一条数据后结束检索&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select * from c_user where
+     name=&#39;ZYM&#39;
+     and
+     password=&#39;123456&#39;
+     limit 1;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://LiaoXiaoB.github.io/post-images/1602811743273.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;-more-4&#34;&gt;&lt;!-- more --&gt;&lt;br&gt;
+4）&lt;/h2&gt;
+&lt;p&gt;找到phpStudy的安装路径，然后进入www文件夹里面的cms文件夹，如果没有cms文件夹就创建一个，&lt;br&gt;
+之后在cms文件夹下创建一个文件名字如下：&lt;br&gt;
+mysql_conn2.php&lt;br&gt;
+在此文件中输入：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+    //设置编码，PHP正确显示中文字符
+    header(&#39;Content-type:text/html;charset=UTF8&#39;);
+
+    //mysql—connect利用PHP链接数据库
+    $conn = mysql_connect(&#39;127.0.0.1&#39;,&#39;root&#39;,&#39;root&#39;);
+    if(!$conn){
+    	die(&#39;链接数据课失败&#39;).error_log($conn);
+    }else{
+    	print_r(&#39;恭喜你，链接数据库成功了&amp;lt;br/&amp;gt;&#39;);
+    }
+    //使用cms数据库 select 检索   db:database: 数据库
+    $ms_db =mysql_select_db(&#39;cms&#39;);
+    if(!$ms_db){
+    	die(&#39;链接cms失败&#39;).error_log($ms_db);
+    }else{
+    	print_r(&#39;链接cms成功&amp;lt;br/&amp;gt;&#39;);
+    }
+    //执行我们的sql操作
+    //$sql = &amp;quot;select * from c_user&amp;quot;;
+    //用一个$result来储存结果，mysql_query执行sql操作
+    //$result=mysql_query($sql);
+    //php有太多版本，mysql_query,mysqli_query出现了多个参数不一致的情况
+    /*while($row=mysql_fetch_assoc($result)){
+    	echo &#39;ID:&#39;.$row[&#39;id&#39;].&#39; &#39;;
+    	echo &#39;用户名:&#39;.$row[&#39;name&#39;].&#39; &#39;;
+    	echo &#39;密码:&#39;.$row[&#39;password&#39;].&#39;&amp;lt;br/&amp;gt;&#39;;*/
+    $sql = &amp;quot;select * from c_user where name=&#39;ZYM&#39; and
+        password=&#39;123456&#39; limit 1&amp;quot;;
+    $result = mysql_query($sql);
+    if(mysql_fetch_assoc($result)){
+    	echo &amp;quot;我找到了名字叫做ZYM，并且密码是123456的用户&amp;quot;;
+    }else{
+    	echo &amp;quot;我没找到了名字叫做ZYM，并且密码是123456的用户&amp;quot;;
+    }
+    
+?&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;strong&gt;未完待续......)&lt;/strong&gt;&lt;/p&gt;
+">phpStudy 2018教程（四）</a>
+      </div>
       
       <div class="item">
         <a class="result-title" style="opacity: 0;" href="https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-san/"" data-c="
