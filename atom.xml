@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-16T07:39:06.657Z</updated>
+    <updated>2020-10-20T03:33:03.446Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -10,6 +10,53 @@
     <logo>https://LiaoXiaoB.github.io/images/avatar.png</logo>
     <icon>https://LiaoXiaoB.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Liao</rights>
+    <entry>
+        <title type="html"><![CDATA[phpStudy 2018教程（五）]]></title>
+        <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-wu/</id>
+        <link href="https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-wu/">
+        </link>
+        <updated>2020-10-20T00:52:46.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+<h2 id="-more-1"><!-- more --><br>
+1）</h2>
+<p>首先接入上次课程输入：<br>
+<code>show databases;</code><br>
+<code>use cms;</code><br>
+<code>show tables;</code></p>
+<h2 id="-more-2"><!-- more --><br>
+2）</h2>
+<p>输入<code>drop table c_post;</code>删除c_post表<br>
+输入以下代码创建一个新的c_post表：</p>
+<pre><code>create table c_post(
+     id int not null primary key
+     auto_increment,
+     title varchar(30) not null,
+     content text not null,
+     user_id int not null,
+     time timestamp not null default
+     CURRENT_TIMESTAMP
+     );
+</code></pre>
+<h2 id="-more-3"><!-- more --><br>
+3）</h2>
+<p>查看创建<code>show create table c_post;</code></p>
+<h2 id="-more-4"><!-- more --><br>
+4)</h2>
+<p>在<strong>phpStudy 2018</strong>中打开其他选项菜单打开网站根目录之后再打开之前创建的<strong>cms</strong>文件夹将百度网盘中文件放入cms文件夹<br>
+链接：https://pan.baidu.com/s/17dOEzJuprGewypf-rCCwHw<br>
+提取码：liao</p>
+<h2 id="-more-5"><!-- more --><br>
+5）</h2>
+<p>在浏览器输入：localhost/cms/login.html<br>
+打开后使用之前教程载入的数据账号ZYM，密码123456登录<br>
+最后效果如下：<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603164746289.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[phpStudy 2018教程（四）]]></title>
         <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-si/</id>
