@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-20T06:57:31.440Z</updated>
+    <updated>2020-10-21T11:43:41.813Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -10,6 +10,98 @@
     <logo>https://LiaoXiaoB.github.io/images/avatar.png</logo>
     <icon>https://LiaoXiaoB.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Liao</rights>
+    <entry>
+        <title type="html"><![CDATA[phpStudy 2018教程（六）]]></title>
+        <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-liu/</id>
+        <link href="https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-liu/">
+        </link>
+        <updated>2020-10-21T07:55:24.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>phpStudy 2018</strong> 项目💾<br>
+根据PHP课堂方法，笔记而成✏️</p>
+<h2 id="-more-1"><!-- more --><br>
+1）</h2>
+<h2 id="打开上次教程百度网盘cms文件夹中的loginphp文件修改如下代码2">打开上次教程百度网盘cms文件夹中的login.php文件修改如下代码<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603278763790.png" alt="" loading="lazy"><br>
+2)</h2>
+<h2 id="打开registerhtml文件修改87行代码修改90行代码修改98行代码修改106行代码修改114行代码3">打开register.html文件<br>
+修改87行代码<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603279020250.png" alt="" loading="lazy"><br>
+修改90行代码<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603279066277.png" alt="" loading="lazy"><br>
+修改98行代码<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603279085472.png" alt="" loading="lazy"><br>
+修改106行代码<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603279165474.png" alt="" loading="lazy"><br>
+修改114行代码<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603279189415.png" alt="" loading="lazy"><br>
+3）</h2>
+<h2 id="在posthtml文件中加入一行pashow-ap4">在post.html文件中加入一行<code>&lt;p&gt;&lt;a&gt;&lt;?=$show ?&gt;&lt;/a&gt;&lt;/p&gt;</code><br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603279513277.png" alt="" loading="lazy"><br>
+4）</h2>
+<p>创建post.php文件</p>
+<pre><code>&lt;?php
+    header(&quot;Content-type:text/html;charset=UTF8&quot;);
+    session_start();
+    $username=$_SESSION['username'];
+    //设置前台展示的内容
+    $show = &quot;&quot;;
+    if(isset($username)){
+    	$show='欢迎你'.$username;
+    }else{
+    	$show=&quot;尚未登录&quot;;
+    }
+    //echo $show;
+    //exit();
+    require('post.html');
+
+?&gt;
+</code></pre>
+<h2 id="5">5）</h2>
+<p>创建register.php文件</p>
+<pre><code>&lt;?php
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+
+    echo $username.&quot; &quot;.$password.&quot; &quot;.$email.&quot; &quot;.$phone;
+
+    $sql = &quot;insert into c_user(name,password,email,phone)
+            values
+            ('$username','$password','$email','$phone')&quot;;
+    header('Content-type:text/html;charset=UTF8');
+    $conn = mysqli_connect('127.0.0.1','root','root','cms');
+
+    $conn-&gt;query('SET NAMES UTF8');
+
+    $res=$conn-&gt;query($sql);
+
+    if($res){
+    	#如果登录成功，那就返回login.html
+    	$url = 'login.html';
+    	echo&quot;&lt;script&gt;window.location.href='$url'&lt;/script&gt;&quot;;
+    }
+?&gt;
+</code></pre>
+<h2 id="6">6）</h2>
+<p>在mysql命令行中输入<br>
+<code>use cms;</code><br>
+添加数据</p>
+<pre><code>insert into c_user(name,password,email,phone)values('$username','$password','$email','$phone');
+</code></pre>
+<h2 id="desc-c_user查看6"><code>desc c_user;</code>查看<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603280035117.png" alt="" loading="lazy"><br>
+6）</h2>
+<p>输入localhost/cms/register.html打开网页后点击提交效果如下<br>
+<img src="https://LiaoXiaoB.github.io/post-images/1603280553793.png" alt="" loading="lazy"></p>
+<!-- more -->
+<p>###ALTER TABLE c_user CHANGE phoe phone varchar(20);<br>
+可以修改表中的字段phoe错误字段，phone为要修改的字段</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[phpStudy 2018教程（五）]]></title>
         <id>https://LiaoXiaoB.github.io/post/phpstudy-2018-jiao-cheng-wu/</id>
