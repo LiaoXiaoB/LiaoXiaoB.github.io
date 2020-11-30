@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://LiaoXiaoB.github.io</id>
     <title>Liao</title>
-    <updated>2020-10-21T11:43:41.813Z</updated>
+    <updated>2020-11-30T01:41:44.632Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://LiaoXiaoB.github.io"/>
     <link rel="self" href="https://LiaoXiaoB.github.io/atom.xml"/>
@@ -100,6 +100,25 @@
 <!-- more -->
 <p>###ALTER TABLE c_user CHANGE phoe phone varchar(20);<br>
 可以修改表中的字段phoe错误字段，phone为要修改的字段</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[身怀利器，杀心自起，慎而重之。]]></title>
+        <id>https://LiaoXiaoB.github.io/post/shen-huai-li-qi-sha-xin-zi-qi-shen-er-chong-zhi/</id>
+        <link href="https://LiaoXiaoB.github.io/post/shen-huai-li-qi-sha-xin-zi-qi-shen-er-chong-zhi/">
+        </link>
+        <updated>2020-10-21T00:25:17.000Z</updated>
+        <summary type="html"><![CDATA[<p>出自李鸿章所述</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>出自李鸿章所述</p>
+<!-- more -->
+<p>光绪六年，俄国皇太子送给李鸿章一把金质手枪，李鸿章爱不释手，经常带与身边。一次外出狩猎之时，便不由自主想一试身手，突然望见了周围的寂静村庄，就此停住，不再使用手枪。幕僚好奇，询问原因，李鸿章回答：“这是我想提醒自己，身怀利器，杀心自起，慎而重之。”</p>
+<p>李鸿章教育幕僚，一个人如果有了武器，便会生出伤害别人之心，正如一个人拥有权力一样，不将权力运用到不能到达的地方，便决不会停止。这个时候，最重要的是手握“利器”的人要常常知省，不要澜生杀心，滥用权力。</p>
+<figure data-type="image" tabindex="1"><img src="https://LiaoXiaoB.github.io/post-images/1603241630595.png" alt="" loading="lazy"></figure>
+<h2 id="拓展资料">拓展资料：</h2>
+<p>李鸿章（1823年2月15日-1901年11月7日），晚清名臣，洋务运动的主要领导人之一，安徽省合肥人，世人多称“李中堂”，因行二，故民间又称“李二先生”。本名章铜，字渐甫或子黻[fú]，号少荃（泉），晚年自号仪叟，别号省心。</p>
+<p>李鸿章是淮军、北洋水师的创始人和统帅、洋务运动的领袖、晚清重臣，建立了中国第一支西式海军北洋水师。官至东宫三师、文华殿大学士、北洋通商大臣、直隶总督，爵位一等肃毅伯。其一生中参与一系列重大历史事件，包括镇压太平天国运动、镇压捻军起义、洋务运动、甲午战争等，代表清政府签订了《越南条约》《马关条约》《中法简明条约》《辛丑条约》等一系列不平等条约。</p>
+<p>日本首相伊藤博文视其为“大清帝国中唯一有能耐可和世界列强一争长短之人”，德国海军大臣柯纳德称其为“东方俾斯麦”，慈禧太后视其为“再造玄黄之人”。与曾国藩、张之洞、左宗棠并称为“中兴四大名臣”。死后追赠太傅，晋一等肃毅侯，谥文忠。著作收于《李文忠公全集》</p>
 ]]></content>
     </entry>
     <entry>
